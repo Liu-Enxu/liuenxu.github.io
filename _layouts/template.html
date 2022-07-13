@@ -26,7 +26,7 @@
 									need a subtitle.
 								-->
 								<h2><a href="#">Something about Me</a></h2>
-								<p>Who am I? What is this?</p>
+								{{Who am I? What is this?}}
 							</header>
 							<div class="info">
 								<!--
@@ -49,16 +49,16 @@
 								</ul>
 							</div>
 							<a href="#" class="image featured"><img src="images/mazov.jpg" alt="" /></a>
-							<p>
+							{{
 								<strong>Greetings!</strong> I am <strong>Liu Enxu (刘恩序)</strong>, a <a href="https://www.ucl.ac.uk/">UCL</a> undergraduate who major in <a href="https://www.ucl.ac.uk/electronic-electrical-engineering/">EEE</a> and you're looking at <strong>my personal website</strong>. 
 								It's a place where you can access my CV and acquire information about my publications and projects, but it also serves as a diary blog to publish details about my DIY projects or other crazy ideas as well. If you see me vacant for jobs and you find my abilities helpful, 
 								or you find either my formal or casual projects intriguing, dont' hesitate to contact me!
-							</p>
-							<p>
+							}}
+							{{
 								Studying in UCL, I was professinally educated with the knowledge of different computer languages, which includes C, System Verilog and Python. Personally I learned Java by myself and acquired a solid knowledge of its foundamentals. Besides I'm also a proficient user for a variety of engineering 
 								softwares, from CAD design such as Solidworks, TinkerCAD and a beginning grasp of Blender,to electrical engineering necessities which involve Multisim, Diptrace and MATLAB. In leisure time I like to design or copy opensource DIY to sharpen my Arduino project development and 3D 
 								printing skills, which you will see a lot in this site in the future.
-							</p>
+							}}
 						</article>
 				<!-- Post -->
 					<article class="box post post-excerpt">
@@ -69,7 +69,7 @@
 									need a subtitle.
 								-->
 								<h2><a href="#">Something about Me</a></h2>
-								<p>Who am I? What is this?</p>
+								{{Who am I? What is this?</p>
 							</header>
 							<div class="info">
 								<!--
@@ -92,20 +92,24 @@
 								</ul>
 							</div>
 							<a href="#" class="image featured"><img src="images/mazov.jpg" alt="" /></a>
-							<p>
+							{{
 								<strong>Greetings!</strong> I am <strong>Liu Enxu (刘恩序)</strong>, a <a href="https://www.ucl.ac.uk/">UCL</a> undergraduate who major in <a href="https://www.ucl.ac.uk/electronic-electrical-engineering/">EEE</a> and you're looking at <strong>my personal website</strong>. 
 								It's a place where you can access my CV and acquire information about my publications and projects, but it also serves as a diary blog to publish details about my DIY projects or other crazy ideas as well. If you see me vacant for jobs and you find my abilities helpful, 
 								or you find either my formal or casual projects intriguing, dont' hesitate to contact me!
-							</p>
-							<p>
+							}}
+							{{
 								Studying in UCL, I was professinally educated with the knowledge of different computer languages, which includes C, System Verilog and Python. Personally I learned Java by myself and acquired a solid knowledge of its foundamentals. Besides I'm also a proficient user for a variety of engineering 
 								softwares, from CAD design such as Solidworks, TinkerCAD and a beginning grasp of Blender,to electrical engineering necessities which involve Multisim, Diptrace and MATLAB. In leisure time I like to design or copy opensource DIY to sharpen my Arduino project development and 3D 
 								printing skills, which you will see a lot in this site in the future.
-							</p>
+							}}
 						</article>
 
 					<!-- Pagination -->
 						<div class="pagination">
+							{% for page in site.pages %}
+							<a href={{page.filename}}>{{page.title}}</a>
+							{% endfor %}
+							
 							<a href="#" class="button previous">Previous Page</a>
 							<div class="pages">
 								<a class="page-link" href="#" class="active">1</a>
