@@ -1,7 +1,7 @@
 ---
-title: PAGE TITLE HERE
+title: index
 layout: template
-filename: NAME OF THIS .md FILE HERE
+filename: index
 --- 
 ## Welcome to GitHub Pages
 
