@@ -1,5 +1,5 @@
 ---
-title: in
+title: index
 layout: template
 filename: index
 --- 
