@@ -106,12 +106,11 @@
 
 					<!-- Pagination -->
 						<div class="pagination">
-							{% for page in site.pages %}
-							<a href={{page.filename}}>{{page.title}}</a>
-							{% endfor %}
-							
 							<a href="#" class="button previous">Previous Page</a>
 							<div class="pages">
+								{% for page in site.pages %}
+								<a href={{page.filename}}>{{page.title}}</a>
+								{% endfor %}
 								<a class="page-link" href="#" class="active">1</a>
 								<a class="page-link" href="#">2</a>
 								<a class="page-link" href="#">3</a>
