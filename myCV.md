@@ -1,5 +1,5 @@
 ---
 title: my CV
 layout: template
-filename: myCV
+filename: myCV.md
 --- 
